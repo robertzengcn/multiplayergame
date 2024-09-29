@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Lobbytest.Mirror.Tutorials.Lobby.Networking;
 namespace Lobbytest.Mirror.Tutorials.Lobby
 {
     public class JoinLobbyMenu : MonoBehaviour

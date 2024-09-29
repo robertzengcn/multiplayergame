@@ -56,20 +56,29 @@
     <Analyzer Include="E:\visualstudiocommunity\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Tutorials\Lobby\Scripts\PlayerNameInput.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Player\PlayerNameInput.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Rounds\RoundSystem.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Inputs\Controls.cs" />
-    <Compile Include="Assets\Tutorials\Lobby\Scripts\MapHandler.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Rounds\MapHandler.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Combat\PlayerStatEntityDisplay.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Combat\HealthChangedEventArgs.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\JoinLobbyMenu.cs" />
-    <Compile Include="Assets\Tutorials\Lobby\Scripts\MapSet.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Combat\DeathEventArgs.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Rounds\MapSet.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Combat\Damageable.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\InputManager.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\ActionMapNames.cs" />
-    <Compile Include="Assets\Tutorials\Lobby\Scripts\PlayerSpawnPoint.cs" />
-    <Compile Include="Assets\Tutorials\Lobby\Scripts\NetworkManagerLobby.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Player\PlayerMovementController.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Combat\Health.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Combat\PlayerStatsDisplay.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Player\PlayerSpawnPoint.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Networking\NetworkManagerLobby.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\MainMenu.cs" />
-    <Compile Include="Assets\Tutorials\Lobby\Scripts\NetworkRoomPlayerLobby.cs" />
-    <Compile Include="Assets\Tutorials\Lobby\Scripts\PlayerSpawnSystem.cs" />
-    <Compile Include="Assets\Tutorials\Lobby\Scripts\NetworkGamePlayerLobby.cs" />
-    <Compile Include="Assets\Tutorials\Lobby\Scripts\PlayerCameraController.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Networking\Player.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Networking\NetworkRoomPlayerLobby.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Player\PlayerSpawnSystem.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Networking\NetworkGamePlayerLobby.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Player\PlayerCameraController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />

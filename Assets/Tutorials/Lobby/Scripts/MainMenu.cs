@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Lobbytest.Mirror.Tutorials.Lobby.Networking;
 namespace Lobbytest.Mirror.Tutorials.Lobby
 {
     public class MainMenu : MonoBehaviour

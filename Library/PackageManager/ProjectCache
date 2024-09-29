@@ -310,6 +310,7 @@ m_PackageAssets:
         - 2.4.3
         - 2.4.4
         - 2.5.1
+        - 2.5.2
         compatible:
         - 2.0.4
         - 2.0.5
@@ -323,6 +324,7 @@ m_PackageAssets:
         - 2.4.3
         - 2.4.4
         - 2.5.1
+        - 2.5.2
         verified: 2.0.7
       dependencies: []
       resolvedDependencies: []
@@ -749,6 +751,7 @@ m_PackageAssets:
         - 1.8.2
         - 1.9.0
         - 1.10.0
+        - 1.11.0
         compatible:
         - 0.1.2-preview
         - 0.2.0-preview
@@ -798,6 +801,7 @@ m_PackageAssets:
         - 1.8.2
         - 1.9.0
         - 1.10.0
+        - 1.11.0
         verified: 1.5.1
       dependencies:
       - name: com.unity.modules.uielements
