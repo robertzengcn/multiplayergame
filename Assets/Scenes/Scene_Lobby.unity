@@ -249,7 +249,7 @@ MonoBehaviour:
   roomPlayerPrefab: {fileID: 2738525163999867951, guid: f2b1b71b6b4660340acb9eabd815c86c, type: 3}
   gamePlayerPrefab: {fileID: 3624354635768503395, guid: 6ef059ae34d25b74681ee3ab52c36567, type: 3}
   playerSpawnSystem: {fileID: 4915614259711322187, guid: 666a37454a5ff624b922738e25293a8d, type: 3}
-  roundSystem: {fileID: 0}
+  roundSystem: {fileID: 5713196727187507458, guid: 217d49b103a05014386b49b516cae008, type: 3}
 --- !u!1 &504171070 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4351083860601567397, guid: 661ccc9c974736e4db830ddf5baf0258, type: 3}

@@ -9,8 +9,9 @@ namespace Lobbytest.Mirror.Tutorials.Lobby.Rounds
 {
     public class RoundSystem : NetworkBehaviour
     {
-        private List<Player> remainingPlayers { get; } = new List<Player>();
         [SerializeField] private Animator animator = null;
+        private List<Player> remainingPlayers { get; } = new List<Player>();
+       
 
         private NetworkManagerLobby room;
 
@@ -64,6 +65,7 @@ namespace Lobbytest.Mirror.Tutorials.Lobby.Rounds
         [ClientRpc]
         private void RpcStartRound()
         {
+            Debug.Log("start");
             InputManager.Remove(ActionMapNames.Player);
         }
         [Server]
