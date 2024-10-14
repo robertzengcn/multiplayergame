@@ -76,10 +76,10 @@
     <Compile Include="Assets\Tutorials\Lobby\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Networking\Player.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Networking\NetworkRoomPlayerLobby.cs" />
+    <Compile Include="Assets\Tutorials\Lobby\Scripts\Inputs\lobbytest.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Player\PlayerSpawnSystem.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Networking\NetworkGamePlayerLobby.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Player\PlayerCameraController.cs" />
-    <Compile Include="Assets\Tutorials\Lobby\Scripts\Inputs\lobbytest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />

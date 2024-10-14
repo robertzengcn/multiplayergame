@@ -245,7 +245,7 @@ MonoBehaviour:
   maxPlayers: 2
   menuScene: Assets/Scenes/Scene_Lobby.unity
   numberOfRounds: 1
-  mapSet: {fileID: 0}
+  mapSet: {fileID: 11400000, guid: cf338958114700844a3eaa0cb781d101, type: 2}
   roomPlayerPrefab: {fileID: 2738525163999867951, guid: f2b1b71b6b4660340acb9eabd815c86c, type: 3}
   gamePlayerPrefab: {fileID: 3624354635768503395, guid: 6ef059ae34d25b74681ee3ab52c36567, type: 3}
   playerSpawnSystem: {fileID: 4915614259711322187, guid: 666a37454a5ff624b922738e25293a8d, type: 3}

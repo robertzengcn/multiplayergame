@@ -145,7 +145,7 @@ namespace Lobbytest.Mirror.Tutorials.Lobby.Networking
                 mapHandler = new MapHandler(mapSet, numberOfRounds);
 
                 ServerChangeScene(mapHandler.NextMap);
-                ServerChangeScene("Scene_Map_01");
+                //ServerChangeScene("Scene_Map_01");
             }
         }
         public void GoToNextMap()
@@ -161,8 +161,9 @@ namespace Lobbytest.Mirror.Tutorials.Lobby.Networking
         {
             Debug.Log(SceneManager.GetActiveScene().path);
             Debug.Log(menuScene);
+            Debug.Log(newSceneName);
             // From menu to game
-            if (SceneManager.GetActiveScene().path == menuScene && newSceneName.StartsWith("Scene_Map"))
+            if (SceneManager.GetActiveScene().path == menuScene && newSceneName.Contains("Scene_Map"))
             {
                 Debug.Log("server change scene");
                 for (int i = RoomPlayers.Count - 1; i >= 0; i--)
@@ -183,8 +184,9 @@ namespace Lobbytest.Mirror.Tutorials.Lobby.Networking
 
         public override void OnServerSceneChanged(string sceneName)
         {
-            if (sceneName.StartsWith("Scene_Map"))
+            if (sceneName.Contains("Scene_Map"))
             {
+                Debug.Log("change to scene map");
                 GameObject playerSpawnSystemInstance = Instantiate(playerSpawnSystem);
                 NetworkServer.Spawn(playerSpawnSystemInstance);
 

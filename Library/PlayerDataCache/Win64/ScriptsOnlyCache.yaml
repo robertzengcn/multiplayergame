@@ -1,14 +1,17 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Assets.Tutorials.Lobby.Scripts.Player.PlayerMovementController
     - Lobbytest.Mirror.Tutorials.Lobby.JoinLobbyMenu
     - Lobbytest.Mirror.Tutorials.Lobby.MainMenu
-    - Lobbytest.Mirror.Tutorials.Lobby.NetworkGamePlayerLobby
-    - Lobbytest.Mirror.Tutorials.Lobby.NetworkManagerLobby
-    - Lobbytest.Mirror.Tutorials.Lobby.NetworkRoomPlayerLobby
+    - Lobbytest.Mirror.Tutorials.Lobby.Networking.NetworkGamePlayerLobby
+    - Lobbytest.Mirror.Tutorials.Lobby.Networking.NetworkManagerLobby
+    - Lobbytest.Mirror.Tutorials.Lobby.Networking.NetworkRoomPlayerLobby
     - Lobbytest.Mirror.Tutorials.Lobby.PlayerNameInput
     - Lobbytest.Mirror.Tutorials.Lobby.PlayerSpawnPoint
     - Lobbytest.Mirror.Tutorials.Lobby.PlayerSpawnSystem
+    - Lobbytest.Mirror.Tutorials.Lobby.Rounds.RoundSystem
+    - Lobbytest.Tutorials.Lobby.Rounds.MapSet
     - PlayerCameraController
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
@@ -17,6 +20,8 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachinePipeline
     - Cinemachine.CinemachineTransposer
     - Cinemachine.CinemachineVirtualCamera
+    Mirror.Components.dll:
+    - Mirror.NetworkTransformUnreliable
     Mirror.Transports.dll:
     - kcp2k.KcpTransport
     Mirror.dll:
@@ -39,6 +44,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -75,9 +88,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -100,55 +121,63 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1718}
+      Script: {instanceID: 1636}
     - Class: 114
-      Script: {instanceID: 1896}
+      Script: {instanceID: 1720}
     - Class: 114
-      Script: {instanceID: 2100}
+      Script: {instanceID: 1898}
     - Class: 114
-      Script: {instanceID: 2268}
+      Script: {instanceID: 2102}
     - Class: 114
-      Script: {instanceID: 2818}
+      Script: {instanceID: 2270}
     - Class: 114
-      Script: {instanceID: 2858}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 2906}
+      Script: {instanceID: 2864}
     - Class: 114
-      Script: {instanceID: 2956}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 2982}
+      Script: {instanceID: 2964}
     - Class: 114
-      Script: {instanceID: 3120}
+      Script: {instanceID: 2990}
     - Class: 114
-      Script: {instanceID: 3860}
+      Script: {instanceID: 3128}
     - Class: 114
-      Script: {instanceID: 4206}
+      Script: {instanceID: 3198}
     - Class: 114
-      Script: {instanceID: 4254}
+      Script: {instanceID: 3712}
     - Class: 114
-      Script: {instanceID: 4330}
+      Script: {instanceID: 3874}
     - Class: 114
-      Script: {instanceID: 4496}
+      Script: {instanceID: 3902}
     - Class: 114
-      Script: {instanceID: 4740}
+      Script: {instanceID: 4222}
     - Class: 114
-      Script: {instanceID: 4888}
+      Script: {instanceID: 4270}
     - Class: 114
-      Script: {instanceID: 4910}
+      Script: {instanceID: 4346}
     - Class: 114
-      Script: {instanceID: 4916}
+      Script: {instanceID: 4512}
     - Class: 114
-      Script: {instanceID: 5184}
+      Script: {instanceID: 4758}
     - Class: 114
-      Script: {instanceID: 5254}
+      Script: {instanceID: 4906}
     - Class: 114
-      Script: {instanceID: 5294}
+      Script: {instanceID: 4928}
     - Class: 114
-      Script: {instanceID: 5620}
+      Script: {instanceID: 4934}
     - Class: 114
-      Script: {instanceID: 5764}
+      Script: {instanceID: 5204}
     - Class: 114
-      Script: {instanceID: 5812}
+      Script: {instanceID: 5274}
+    - Class: 114
+      Script: {instanceID: 5314}
+    - Class: 114
+      Script: {instanceID: 5640}
+    - Class: 114
+      Script: {instanceID: 5784}
+    - Class: 114
+      Script: {instanceID: 5832}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -199,15 +228,15 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 2906}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 2994}
+      Script: {instanceID: 3002}
     - Class: 114
-      Script: {instanceID: 3380}
+      Script: {instanceID: 3390}
     - Class: 114
-      Script: {instanceID: 4106}
+      Script: {instanceID: 4122}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -329,6 +358,12 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.Basic
     className: PlayerUI
+  - hash:
+      serializedVersion: 2
+      Hash: 467d549fd40362927dc884a5e959e30a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lobbytest.Mirror.Tutorials.Lobby.Rounds
+    className: RoundSystem
   - hash:
       serializedVersion: 2
       Hash: 681b5f9be6f57e5a7b20908e503986d3
@@ -581,6 +616,12 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.CCU
     className: Player
+  - hash:
+      serializedVersion: 2
+      Hash: b8215adfb0ddbcb79741c48e64c5456f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lobbytest.Mirror.Tutorials.Lobby.Combat
+    className: PlayerStatEntityDisplay
   - hash:
       serializedVersion: 2
       Hash: cd0ecdca0166232906c6f2df9dddc3d3
@@ -933,7 +974,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 78fdde6cf23b4eda5cc2d314eb2c0892
     assemblyName: Assembly-CSharp.dll
-    namespaceName: Lobbytest.Tutorials.Lobby
+    namespaceName: Lobbytest.Tutorials.Lobby.Rounds
     className: MapSet
   - hash:
       serializedVersion: 2
@@ -1001,6 +1042,12 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.Authenticators.dll
     namespaceName: Mirror.Authenticators
     className: DeviceAuthenticator
+  - hash:
+      serializedVersion: 2
+      Hash: 45d445851b309878897dc4a5f8d0717a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lobbytest.Mirror.Tutorials.Lobby.Combat
+    className: Damageable
   - hash:
       serializedVersion: 2
       Hash: 23d73c0bf0ec7e5a3c985bc947fc76c9
@@ -1177,10 +1224,22 @@ ScriptsOnlyBuild:
     className: NetworkRigidbodyReliable2D
   - hash:
       serializedVersion: 2
+      Hash: e8937d49993e0f91fe03ff37c642f368
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Assets.Tutorials.Lobby.Scripts.Player
+    className: PlayerMovementController
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputActionAssetEditor
+  - hash:
+      serializedVersion: 2
+      Hash: e898d5a45708c998741ccbb88d85ce38
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lobbytest.Mirror.Tutorials.Lobby.Combat
+    className: Health
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1289,6 +1348,12 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.Pong
     className: Player
+  - hash:
+      serializedVersion: 2
+      Hash: 28fb7791cee350289e4d542a61e2ef74
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lobbytest.Mirror.Tutorials.Lobby.Combat
+    className: PlayerStatsDisplay
   - hash:
       serializedVersion: 2
       Hash: aa4e3303a7da9a51ec05475e937e5f7d
@@ -1401,7 +1466,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 3cc77227e4a4b659b665d92aaff03e23
     assemblyName: Assembly-CSharp.dll
-    namespaceName: Lobbytest.Mirror.Tutorials.Lobby
+    namespaceName: Lobbytest.Mirror.Tutorials.Lobby.Networking
     className: NetworkManagerLobby
   - hash:
       serializedVersion: 2
@@ -1573,6 +1638,12 @@ ScriptsOnlyBuild:
     className: PlayerForce
   - hash:
       serializedVersion: 2
+      Hash: 5085c149ae898c11398927898b806b9c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Lobbytest.Mirror.Tutorials.Lobby.Networking
+    className: Player
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1689,7 +1760,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 9bf9b0f272d065652cf3ee1c1ec93b4d
     assemblyName: Assembly-CSharp.dll
-    namespaceName: Lobbytest.Mirror.Tutorials.Lobby
+    namespaceName: Lobbytest.Mirror.Tutorials.Lobby.Networking
     className: NetworkRoomPlayerLobby
   - hash:
       serializedVersion: 2
@@ -1977,7 +2048,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 5085c149ae898c11398927898b806b9c
     assemblyName: Assembly-CSharp.dll
-    namespaceName: Lobbytest.Mirror.Tutorials.Lobby
+    namespaceName: Lobbytest.Mirror.Tutorials.Lobby.Networking
     className: NetworkGamePlayerLobby
   - hash:
       serializedVersion: 2

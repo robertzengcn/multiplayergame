@@ -35,6 +35,7 @@ namespace Lobbytest.Mirror.Tutorials.Lobby
         [Server]
         public void SpawnPlayer(NetworkConnection conn)
         {
+            Debug.Log("spawn point for index" + nextIndex);
             Transform spawnPoint = spawnPoints.ElementAtOrDefault(nextIndex);
             if (spawnPoint == null)
             {
