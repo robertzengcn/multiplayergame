@@ -6,6 +6,7 @@ namespace Lobbytest.Mirror.Tutorials.Lobby.Combat
 {
     public class Health : NetworkBehaviour
     {
+        [Header("Setting")]
         [SerializeField]private float maxHealth = 100f;
         [SyncVar(hook = nameof(HandleHealthChanged))]
         private float health = 0f;

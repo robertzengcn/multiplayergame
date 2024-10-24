@@ -430,6 +430,7 @@ m_PackageAssets:
         - 3.0.27
         - 3.0.28
         - 3.0.31
+        - 3.0.34
         compatible:
         - 1.0.2
         - 1.0.6
@@ -474,7 +475,8 @@ m_PackageAssets:
         - 3.0.27
         - 3.0.28
         - 3.0.31
-        verified: 3.0.31
+        - 3.0.34
+        verified: 3.0.34
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -753,6 +755,7 @@ m_PackageAssets:
         - 1.9.0
         - 1.10.0
         - 1.11.0
+        - 1.11.2
         compatible:
         - 0.1.2-preview
         - 0.2.0-preview
@@ -803,6 +806,7 @@ m_PackageAssets:
         - 1.9.0
         - 1.10.0
         - 1.11.0
+        - 1.11.2
         verified: 1.5.1
       dependencies:
       - name: com.unity.modules.uielements

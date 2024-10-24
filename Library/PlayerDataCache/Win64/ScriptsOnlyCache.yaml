@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Assets.Tutorials.Lobby.Scripts.Player.PlayerMovementController
+    - Lobbytest.Mirror.Tutorials.Lobby.Combat.PlayerStatEntityDisplay
     - Lobbytest.Mirror.Tutorials.Lobby.JoinLobbyMenu
     - Lobbytest.Mirror.Tutorials.Lobby.MainMenu
     - Lobbytest.Mirror.Tutorials.Lobby.Networking.NetworkGamePlayerLobby
@@ -13,6 +14,7 @@ ScriptsOnlyBuild:
     - Lobbytest.Mirror.Tutorials.Lobby.Rounds.RoundSystem
     - Lobbytest.Tutorials.Lobby.Rounds.MapSet
     - PlayerCameraController
+    - PlayerMovement
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineCollider
@@ -21,11 +23,14 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineTransposer
     - Cinemachine.CinemachineVirtualCamera
     Mirror.Components.dll:
+    - Mirror.NetworkAnimator
     - Mirror.NetworkTransformUnreliable
     Mirror.Transports.dll:
     - kcp2k.KcpTransport
     Mirror.dll:
     - Mirror.NetworkIdentity
+    - Mirror.NetworkManager
+    - Mirror.NetworkManagerHUD
     - Mirror.NetworkStartPosition
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
@@ -67,7 +72,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/Scene_Lobby.unity:
+    Assets/Scenes/Animationtest.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -87,6 +92,127 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1488}
+    - Class: 114
+      Script: {instanceID: 1490}
+    - Class: 114
+      Script: {instanceID: 1500}
+    - Class: 114
+      Script: {instanceID: 1558}
+    - Class: 114
+      Script: {instanceID: 1560}
+    - Class: 114
+      Script: {instanceID: 1636}
+    - Class: 114
+      Script: {instanceID: 1898}
+    - Class: 114
+      Script: {instanceID: 2102}
+    - Class: 114
+      Script: {instanceID: 2270}
+    - Class: 114
+      Script: {instanceID: 2318}
+    - Class: 114
+      Script: {instanceID: 2824}
+    - Class: 114
+      Script: {instanceID: 2964}
+    - Class: 114
+      Script: {instanceID: 2990}
+    - Class: 114
+      Script: {instanceID: 3002}
+    - Class: 114
+      Script: {instanceID: 3128}
+    - Class: 114
+      Script: {instanceID: 3652}
+    - Class: 114
+      Script: {instanceID: 3712}
+    - Class: 114
+      Script: {instanceID: 3902}
+    - Class: 114
+      Script: {instanceID: 4222}
+    - Class: 114
+      Script: {instanceID: 4346}
+    - Class: 114
+      Script: {instanceID: 4928}
+    - Class: 114
+      Script: {instanceID: 4934}
+    - Class: 114
+      Script: {instanceID: 5206}
+    - Class: 114
+      Script: {instanceID: 5276}
+    - Class: 114
+      Script: {instanceID: 5316}
+    - Class: 114
+      Script: {instanceID: 5438}
+    - Class: 114
+      Script: {instanceID: 5510}
+    - Class: 114
+      Script: {instanceID: 5642}
+    - Class: 114
+      Script: {instanceID: 5786}
+    - Class: 114
+      Script: {instanceID: 5834}
+    - Class: 114
+      Script: {instanceID: 28844}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Scene_Lobby.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -129,7 +255,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2102}
     - Class: 114
-      Script: {instanceID: 2270}
+      Script: {instanceID: 2318}
     - Class: 114
       Script: {instanceID: 2824}
     - Class: 114
@@ -163,21 +289,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4906}
     - Class: 114
-      Script: {instanceID: 4928}
-    - Class: 114
       Script: {instanceID: 4934}
     - Class: 114
-      Script: {instanceID: 5204}
+      Script: {instanceID: 5206}
     - Class: 114
-      Script: {instanceID: 5274}
+      Script: {instanceID: 5276}
     - Class: 114
-      Script: {instanceID: 5314}
+      Script: {instanceID: 5642}
     - Class: 114
-      Script: {instanceID: 5640}
+      Script: {instanceID: 5786}
     - Class: 114
-      Script: {instanceID: 5784}
-    - Class: 114
-      Script: {instanceID: 5832}
+      Script: {instanceID: 5834}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1776,6 +1898,12 @@ ScriptsOnlyBuild:
     className: PlayerCamera
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthDisplay
+  - hash:
+      serializedVersion: 2
       Hash: dbfb4270852b0008a423a7418d9de4cf
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -2164,8 +2292,15 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.TankTheftAuto
     className: AuthorityNetworkManager
+  - hash:
+      serializedVersion: 2
+      Hash: e75fce0235524bae7a5f913c4e1094dc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerMovement
   platform: 19
   scenePathNames:
+  - Assets/Scenes/Animationtest.unity
   - Assets/Scenes/Scene_Lobby.unity
   - Assets/Scenes/Scene_Map_01.unity
   playerPath: E:/untity project/lobbytest/builds/lobbytest_Data/lobbytest_Data/lobbytest_Data/lobbytest_Data/lobbytest_Data/lobbytest.exe
