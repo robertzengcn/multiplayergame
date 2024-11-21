@@ -62,10 +62,13 @@
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Rounds\MapHandler.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Combat\PlayerStatEntityDisplay.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Combat\HealthChangedEventArgs.cs" />
+    <Compile Include="Assets\Tutorials\CharacterSelection\Scripts\CharacterSelect.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\JoinLobbyMenu.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Combat\DeathEventArgs.cs" />
+    <Compile Include="Assets\Tutorials\Animation\scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Rounds\MapSet.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Combat\Damageable.cs" />
+    <Compile Include="Assets\Tutorials\CharacterSelection\Scripts\Character.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\InputManager.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\ActionMapNames.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Player\PlayerMovementController.cs" />
@@ -73,6 +76,7 @@
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Combat\PlayerStatsDisplay.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Player\PlayerSpawnPoint.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Networking\NetworkManagerLobby.cs" />
+    <Compile Include="Assets\Tutorials\CharacterSelection\Scripts\PlayMovement.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Networking\Player.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Networking\NetworkRoomPlayerLobby.cs" />
@@ -81,7 +85,6 @@
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Player\PlayerSpawnSystem.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Networking\NetworkGamePlayerLobby.cs" />
     <Compile Include="Assets\Tutorials\Lobby\Scripts\Player\PlayerCameraController.cs" />
-    <Compile Include="Assets\Tutorials\Animation\scripts\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />
